@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Retro MP3 Player</title>
+        <style>
+            body {
+                background-color: #121212;
+                color: #00ff00;
+                font-family: monospace;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .player-box{
+                background-color: #262626;
+                border: 2px solid #555;
+                padding: 20px;
+                width: 280px;
+                border-radius: 4px;
+            }
+            .screen {
+                background-color: #000;
+                border: 2px inset #444;
+                padding: 10px;
+                margin-bottom: 15px;
+                font-size: 13px;
+                text=shadow: 0 0 5px #00ff00;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="player-box">
+            <div style="font-weight: bold;margin-bottom: 8px;">RETRO MP3 PLAYER</div>
+
+            <div class="screen" id="track-info">
+                01. No track loaded
+        </div>
+
+        <auto id="audio-player" controls style="width: 100%;"></audio>
+    </body>
+</html>
