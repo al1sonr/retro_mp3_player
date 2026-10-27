@@ -29,9 +29,22 @@
                 font-size: 13px;
                 text=shadow: 0 0 5px #00ff00;
             }
+            .retro-btn{
+                background-color: #d4d0c8;
+                border: 2px outset #fff;
+                color: #000;
+                cursor: pointer;
+                font-family: monospace;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 6px 12px;
+            }
+            .retro-btn:active{
+                border-style: inset;
+                background-color: #bcbcbc;
+            }
         </style>
     </head>
-
     <body>
         <div class="player-box">
             <div style="font-weight: bold;margin-bottom: 8px;">RETRO MP3 PLAYER</div>
@@ -40,6 +53,10 @@
                 01. No track loaded
         </div>
 
-        <auto id="audio-player" controls style="width: 100%;"></audio>
+            <audio id="audio-player"></audio>
+            <div class="button-container">
+                <button class="retro-btn" id="play-btn">Play</button>
+            <button class="retro-btn" id="pause-btn">Pause</button>
+            <button class="retro-btn" id="stop-btn">Stop</button>
     </body>
 </html>
